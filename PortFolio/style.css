@@ -1,0 +1,97 @@
+/*---body---*/
+.bg{
+   
+    height: 2050px;
+    background-color: white;
+    box-shadow: 10px 10px 5px #888888;
+    box-sizing:border-box
+}
+body{
+    background-image:url(portbg.jpg);
+    margin: 50px;
+  
+}
+/*---end---*/
+
+/*--- header---*/
+.name{
+    
+    font-size: 50px;
+    margin-top: 70px;
+    margin-left: 10%;
+    text-shadow: 2px 2px 8px rgb(248, 245, 245);
+}
+.name div{
+    font-size: 30px;
+    margin-left:-80px;
+    text-shadow: 2px 2px 8px  rgb(248, 245, 245);
+}
+.headbg{
+    display: flex;
+    background-color: #718093;
+    height: 250px;
+    border-bottom: 10px solid #7f8fa6;
+    text-align: center;
+}
+
+.profilepic{
+    margin-top: 12.5px;
+    height: 225px;
+    width: 225px;
+    margin-left: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+/*----end----*/
+
+/*---Section---*/
+.sectionbg{
+    background-color: #bdc3c7 ;
+    float: left;
+    height: 2000px;
+    width: 40%;
+}
+.headtext{
+    
+    font-weight: bolder;
+    padding-top: 5%;
+   text-align: center;
+
+}
+.introaboutme{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+   
+}
+/*---end---*/
+/*---aside---*/
+.asidebg{
+    
+    background-color: #dcdde1;
+    height: 2000px;
+    width: 60%;
+    float: left;
+}
+.introinfomation{
+    margin-left: 10%;
+}
+.infotext{
+    margin-left: 15%;   
+}
+/*---end---*/
+/*---footer---*/
+.footerbg{
+    float: left;
+    width: 100%;
+    background-color:  #95a5a6;
+    height: 100px;
+}
+.linkicon{
+    margin-top: auto;
+    display: block;
+    text-align: end;
+    margin-right: 20px;
+    padding-top: 20px;
+}
