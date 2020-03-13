@@ -1,10 +1,17 @@
+*{
+    box-sizing: border-box;
+}
 /*---body---*/
-.bg{
-   
-    height: 2050px;
+.container{
+    display: grid;
+    grid-template-areas: "header header"
+                        "section aside"
+                        "footer footer";
+     grid-template-columns:  40% 60%;
+     grid-template-rows:  auto auto 100px;  /* ~~= headder + (aside == section) + footer */
     background-color: white;
     box-shadow: 10px 10px 5px #888888;
-    box-sizing:border-box
+    
 }
 body{
     background-image:url(portbg.jpg);
@@ -14,79 +21,104 @@ body{
 /*---end---*/
 
 /*--- header---*/
+header{
+    grid-area: header;
+}
+.headbg{
+   
+    display: flex;
+    background-color: #718093;
+    border-bottom: 10px solid #7f8fa6;
+    text-align: center;
+    
+}
+
 .name{
     
-    font-size: 50px;
+    font-size: 4vw;
     margin-top: 70px;
     margin-left: 10%;
     text-shadow: 2px 2px 8px rgb(248, 245, 245);
 }
 .name div{
-    font-size: 30px;
+    font-size: 3vw;
     margin-left:-80px;
     text-shadow: 2px 2px 8px  rgb(248, 245, 245);
-}
-.headbg{
-    display: flex;
-    background-color: #718093;
-    height: 250px;
-    border-bottom: 10px solid #7f8fa6;
-    text-align: center;
 }
 
 .profilepic{
     margin-top: 12.5px;
-    height: 225px;
-    width: 225px;
+    max-height: 200px;
     margin-left: 80px;
     border-radius: 50%;
     border: 2px solid white;
-
+    max-width: 200px;
+    display: flex;
 }
 /*----end----*/
 
 /*---Section---*/
+section{
+    grid-area: section;
+}
 .sectionbg{
+   
     background-color: #bdc3c7 ;
-    float: left;
-    height: 2000px;
-    width: 40%;
+    position: relative; /*ตัวอักษรไม่ซ้อน layout*/
+    padding-bottom: 31.75%;
 }
 .headtext{
-    
+    color : #222f3e ;
+    font-size: 1vw;
     font-weight: bolder;
     padding-top: 5%;
    text-align: center;
-
 }
 .introaboutme{
+    
     margin-top: 20px;
     text-align: center;
-    font-size: 15px;
-   
+    font-size: 1.25vw;
+}
+.skilltext{
+    margin-left: 14%;
+    margin-top: 20px;
+    font-size: 1.25vw;
 }
 /*---end---*/
 /*---aside---*/
-.asidebg{
-    
-    background-color: #dcdde1;
-    height: 2000px;
-    width: 60%;
-    float: left;
+aside{
+    grid-area: aside;
 }
-.introinfomation{
+.asidebg{
+    background-color: #dcdde1;
+    position: relative;
+    
+}
+.introhead{
+    color : #222f3e;
     margin-left: 10%;
+    font-size: 1vw;
 }
 .infotext{
-    margin-left: 15%;   
+    margin-left: 15%;  
+    font-size: 1.25vw;
+
+}
+.listtext{
+    margin-left: 15%;
+    font-size: 1.25vw;
 }
 /*---end---*/
 /*---footer---*/
+footer{
+    grid-area: footer;
+}
 .footerbg{
-    float: left;
-    width: 100%;
-    background-color:  #95a5a6;
+    
+    background-color: #95a5a6;
     height: 100px;
+    position: relative;
 }
 .linkicon{
     margin-top: auto;
@@ -94,4 +126,6 @@ body{
     text-align: end;
     margin-right: 20px;
     padding-top: 20px;
+    font-size: 2vw;
+    text-shadow: 2px 2px 8px rgb(248, 245, 245);
 }
