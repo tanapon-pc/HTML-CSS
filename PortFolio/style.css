@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 /*---body---*/
@@ -6,9 +8,9 @@
     display: grid;
     grid-template-areas: "header header"
                         "section aside"
-                        "footer footer";
+                      "footer footer" ;
      grid-template-columns:  40% 60%;
-     grid-template-rows:  auto auto 100px;  /* ~~= headder + (aside == section) + footer */
+     grid-template-rows: 225px auto 100px ;  /* ~~= headder + (aside == section) + footer */
     background-color: white;
     box-shadow: 10px 10px 5px #888888;
     
@@ -30,30 +32,33 @@ header{
     background-color: #718093;
     border-bottom: 10px solid #7f8fa6;
     text-align: center;
+    height: 100%;
     
 }
 
-.name{
-    
-    font-size: 4vw;
-    margin-top: 70px;
-    margin-left: 10%;
+.namebox{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 40px;
     text-shadow: 2px 2px 8px rgb(248, 245, 245);
 }
-.name div{
-    font-size: 3vw;
+.name{
+    
+    font-size: 30px;
     margin-left:-80px;
     text-shadow: 2px 2px 8px  rgb(248, 245, 245);
 }
+.profilebox{
+   margin-top: 25px;
+   margin-left: 25px;
 
+}
 .profilepic{
-    margin-top: 12.5px;
-    max-height: 200px;
-    margin-left: 80px;
+    max-width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 2px solid white;
-    max-width: 200px;
-    display: flex;
+    display: block;
 }
 /*----end----*/
 
@@ -65,11 +70,11 @@ section{
    
     background-color: #bdc3c7 ;
     position: relative; /*ตัวอักษรไม่ซ้อน layout*/
-    padding-bottom: 31.75%;
+    height: 100%;
 }
 .headtext{
     color : #222f3e ;
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight: bolder;
     padding-top: 5%;
    text-align: center;
@@ -78,12 +83,12 @@ section{
     
     margin-top: 20px;
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 1.25rem;
 }
 .skilltext{
     margin-left: 14%;
     margin-top: 20px;
-    font-size: 1.25vw;
+    font-size: 1.25rem;
 }
 /*---end---*/
 /*---aside---*/
@@ -93,21 +98,21 @@ aside{
 .asidebg{
     background-color: #dcdde1;
     position: relative;
-    
+    height: 100%;
 }
 .introhead{
     color : #222f3e;
     margin-left: 10%;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 .infotext{
     margin-left: 15%;  
-    font-size: 1.25vw;
+    font-size: 1.25rem;
 
 }
 .listtext{
     margin-left: 15%;
-    font-size: 1.25vw;
+    font-size: 1.25rem;
 }
 /*---end---*/
 /*---footer---*/
@@ -126,6 +131,6 @@ footer{
     text-align: end;
     margin-right: 20px;
     padding-top: 20px;
-    font-size: 2vw;
+    font-size: 2rem;
     text-shadow: 2px 2px 8px rgb(248, 245, 245);
 }
